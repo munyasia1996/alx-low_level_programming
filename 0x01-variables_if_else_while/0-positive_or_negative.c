@@ -16,8 +16,8 @@ n = rand() - RAND_MAX / 2;
 if (n > 0)
 printf("%d is positive\n", n);
 if (n == 0)
-printf("sd is zero\n, n);
-if (n < 0)
+printf("sd is zero\n," n);
+if (n < 0);
 {
 printf("sd is negative\n", n);
 }
