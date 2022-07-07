@@ -1,30 +1,30 @@
 #include <stdio.h>
+#include "holberton.h"
+
 /**
- * main - entry point
+ * main - print thr numbers drom 1 to 100, followed by a new line.
+ * for multiples of 3 print Fizz insted the number.
+ * for multiples of 5 print Buzz insted the number.
+ * for multiples of 3 and 5 print FizzBuzz insted the number.
  *
- * Description: prints FizzBuzz
+ * Return: Always 0.
  *
- * Return: void
  */
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 1; n <= 100; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
-			printf("FizzBuzz");
-		else if (n % 5 == 0)
-			printf("Buzz");
-		else if (n % 3 == 0)
+		if ((i % 3 != 0) && (i % 5 != 0))
+			printf("%i", i);
+		if (i % 3 == 0)
 			printf("Fizz");
-		else
-			printf("%i", n);
-
-		if (n < 100)
+		if (i % 5 == 0)
+			printf("Buzz");
+		if (i < 100)
 			printf(" ");
-		else
-			printf("\n");
 	}
+	printf("\n");
 	return (0);
 }
