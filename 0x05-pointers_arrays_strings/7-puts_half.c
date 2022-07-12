@@ -10,16 +10,16 @@ void puts_half(char *str)
 
 	index = 0;
 	while (str[index] != '\0')
-		inde++;
+		index++;
 
 	half = index / 2;
 	
-	if (index & 2 == 1)
+	if (index % 2 == 1)
 		half++;
 	while (half < index)
 	{
 		_putchar(str[half]);
 		half++;
 	}
-	putchar('\n')
+	_putchar('\n');
 }
